@@ -1,0 +1,143 @@
+*{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: linear-gradient(27deg, lightpink 50%, lightcoral 50%);
+}
+
+.form{
+  width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: solid 2px indianred;
+  margin: 10px;
+
+}
+
+.form img{
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: maroon;
+  margin-bottom: 25px;
+}
+
+.form input{
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 75%;
+  padding-left: 10px;
+  color: maroon;
+  border: 1px solid maroon;
+  border-radius: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:invalid{
+  border: 2px dashed red;
+}
+
+input:valid{
+  border: 2px solid green;
+}
+
+.error{
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.error.active{
+  padding: 0.3em;
+}
+
+.form input[type="date"]{
+  font-size: 1rem;
+  color: rgba(255,255,255, .596);
+}
+
+::placeholder {
+  font-size: 1rem;
+  color: rgba(255,255,255, .596);
+}
+
+.form input:hover{
+  transition: .5s;
+  border: 1px solid darkslategrey;
+  color: darkslategrey;
+}
+
+.form button{
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 78%;
+  font-size: 1rem;
+  font-weight: 620;
+  background: transparent;
+  color:darkslategrey;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid;
+  transition: all .5s ease;
+}
+
+.form button:hover{
+  color: darkslategrey;
+  border: 2px solid darkslategrey;
+  background: linear-gradient(darksalmon,goldenrod);
+}
+
+.form label{
+  font-size: 1.2rem;
+  color: maroon;
+  padding-left: 50px;
+  margin-bottom: 28px;
+}
+
+.boton{
+  display: block;
+  font-weight: 700;
+  margin: 5;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  height: 30px;
+  width: 5%;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid;
+  transition: all .5s ease;
+  color: ghostwhite;
+  border: 2px solid darkslategrey;
+  background: linear-gradient(brown,darksalmon);
+}
