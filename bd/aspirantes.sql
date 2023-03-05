@@ -1,0 +1,81 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 05, 2023 at 07:09 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.0.25
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `formulario`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `aspirantes`
+--
+
+CREATE TABLE `aspirantes` (
+  `idAspi` bigint(20) UNSIGNED NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `fecha_nac` date NOT NULL,
+  `edad` int(11) NOT NULL,
+  `bachillerato` varchar(50) NOT NULL,
+  `promedio` float NOT NULL,
+  `municipio` varchar(60) NOT NULL,
+  `certificado` varchar(2) NOT NULL,
+  `foto` varchar(60) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `aspirantes`
+--
+
+INSERT INTO `aspirantes` (`Field_name`, `Min_value`, `Max_value`, `Min_length`, `Max_length`, `Empties_or_zeros`, `Nulls`, `Avg_value_or_avg_length`, `Std`, `Optimal_fieldtype`) VALUES
+(0x666f726d756c6172696f2e6173706972616e7465732e696441737069, NULL, NULL, 0, 0, 0, 0, 0x302e30, 0x302e30, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e6e6f6d627265, NULL, NULL, 0, 0, 0, 0, 0x302e30, NULL, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e66656368615f6e6163, NULL, NULL, 0, 0, 0, 0, 0x302e30, NULL, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e65646164, NULL, NULL, 0, 0, 0, 0, 0x302e30, 0x302e30, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e62616368696c6c657261746f, NULL, NULL, 0, 0, 0, 0, 0x302e30, NULL, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e70726f6d6564696f, NULL, NULL, 0, 0, 0, 0, 0x302e30, 0x302e30, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e6d756e69636970696f, NULL, NULL, 0, 0, 0, 0, 0x302e30, NULL, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e636572746966696361646f, NULL, NULL, 0, 0, 0, 0, 0x302e30, NULL, 0x43484152283029204e4f54204e554c4c),
+(0x666f726d756c6172696f2e6173706972616e7465732e666f746f, NULL, NULL, 0, 0, 0, 0, 0x302e30, NULL, 0x43484152283029204e4f54204e554c4c);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `aspirantes`
+--
+ALTER TABLE `aspirantes`
+  ADD PRIMARY KEY (`idAspi`),
+  ADD UNIQUE KEY `idAspi` (`idAspi`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `aspirantes`
+--
+ALTER TABLE `aspirantes`
+  MODIFY `idAspi` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
